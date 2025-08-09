@@ -1,0 +1,27 @@
+/* components/Footer.css */
+.footer {
+  padding: 30px 50px;
+  background-color: #f9fafb;
+  text-align: center;
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 15px;
+}
+.footer-links a {
+  color: #374151;
+  text-decoration: none;
+}
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.footer p {
+  font-size: 14px;
+  color: #9ca3af;
+}

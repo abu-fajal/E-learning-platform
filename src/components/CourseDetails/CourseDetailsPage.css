@@ -1,0 +1,105 @@
+/* src/components/CourseDetails/CourseDetailsPage.css */
+
+.course-details {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 0.7s ease-in;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.course-details h1 {
+  font-size: 2.2rem;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.course-details p {
+  color: #555;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+section {
+  margin-top: 2rem;
+}
+
+h3 {
+  color: #1e90ff;
+  margin-bottom: 0.5rem;
+}
+
+ul {
+  list-style: disc inside;
+  padding-left: 1rem;
+}
+
+ul li {
+  margin-bottom: 0.4rem;
+  font-size: 1rem;
+  color: #444;
+}
+
+.instructor-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.instructor-info img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #1e90ff;
+  transition: transform 0.3s ease;
+}
+
+.instructor-info img:hover {
+  transform: scale(1.05);
+}
+
+.instructor-info strong {
+  display: block;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.instructor-info p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .instructor-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .course-details {
+    padding: 1rem;
+  }
+
+  video {
+    max-height: 240px;
+  }
+}

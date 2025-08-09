@@ -1,0 +1,84 @@
+/* src/components/MiniNavbar.css */
+
+.mini-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 28px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 64px;
+}
+
+.mini-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.brand {
+  font-size: 20px;
+  font-weight: 700;
+  margin-right: 24px;
+  color: #111;
+}
+
+.mini-links {
+  display: flex;
+  gap: 20px;
+}
+
+.mini-links a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+  font-size: 15px;
+  transition: color 0.3s;
+}
+
+.mini-links a:hover {
+  color: #0077ff;
+}
+
+.mini-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background-color: #f1f3f5;
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  background: transparent;
+  margin-left: 8px;
+  font-size: 14px;
+}
+
+.icon {
+  font-size: 16px;
+  color: #555;
+  cursor: pointer;
+}
+
+.profile-pic {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+}

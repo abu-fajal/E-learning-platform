@@ -1,0 +1,25 @@
+.course-card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  padding: 0 0 12px;
+  transition: transform 0.2s;
+}
+
+.course-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.course-card h4 {
+  margin: 10px 14px 4px;
+  font-size: 16px;
+}
+
+.course-card p {
+  margin: 0 14px;
+  font-size: 13px;
+  color: #666;
+}

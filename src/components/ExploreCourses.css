@@ -1,0 +1,15 @@
+.explore-courses {
+  padding: 40px 60px 20px;
+  background-color: #fff;
+  color: #111;
+}
+
+.explore-courses h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.explore-courses p {
+  color: #666;
+  font-size: 16px;
+}

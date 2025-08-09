@@ -1,0 +1,35 @@
+/* components/WhyChoose.css */
+.why {
+  padding: 40px 50px;
+  text-align: center;
+}
+.why h2 {
+  color: #111827;
+  font-size: 24px;
+}
+.why h3 {
+  font-size: 28px;
+  margin-top: 10px;
+}
+.why p {
+  margin: 15px 0 30px;
+  color: #6b7280;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.feature-card {
+  background: #f9fafb;
+  padding: 25px;
+  border-radius: 8px;
+  width: 250px;
+}
+.icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,243 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  font-family: "Segoe UI", sans-serif;
+  color: #111;
+  background-color: #f8f9fc;
+}
+
+/* Pricing Header */
+.pricing-header {
+  width: 100%;
+  padding: 3rem 1rem 2rem;
+  text-align: center;
+  background-color: #f4f6f9;
+}
+
+.pricing-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.pricing-header p {
+  color: #666;
+  font-size: 1rem;
+}
+
+/* Billing Toggle */
+.billing-toggle {
+  display: inline-flex;
+  background: #eee;
+  border-radius: 25px;
+  overflow: hidden;
+  margin-top: 1.5rem;
+}
+
+.billing-toggle span {
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #333;
+}
+
+.billing-toggle .active {
+  background: #1e90ff;
+  color: white;
+}
+
+/* Container Layout */
+.pricing-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+/* Cards Section */
+.pricing-cards {
+  margin-top: 900px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+  font-size: 1.4rem;
+  color: #1e90ff;
+}
+
+.card h2 {
+  margin: 0.5rem 0;
+  font-size: 2rem;
+}
+
+.card span {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.card li {
+  margin-bottom: 0.5rem;
+}
+
+.card button {
+  margin-top: 1rem;
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.card button:hover {
+  background-color: #187bcd;
+}
+
+/* Popular Badge */
+.popular {
+  border: 2px solid #1e90ff;
+  box-shadow: 0 0 15px rgba(30, 144, 255, 0.2);
+}
+
+.badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: #1e90ff;
+  color: white;
+  font-size: 0.75rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Feature Comparison */
+.feature-comparison {
+  margin: 4rem 0;
+}
+
+.feature-comparison h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.feature-comparison table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.feature-comparison th,
+.feature-comparison td {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  font-size: 0.95rem;
+}
+
+.feature-comparison th {
+  background-color: #f5f5f5;
+}
+
+/* FAQ Section */
+.faq {
+  margin: 4rem 0;
+}
+
+.faq h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.faq details {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 1rem auto;
+  max-width: 900px;
+  cursor: pointer;
+}
+
+.faq summary {
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+
+/* CTA Section */
+.pricing-cta {
+  text-align: center;
+  padding: 4rem 1rem;
+  background-color: #eef5ff;
+  width: 100%;
+}
+
+.pricing-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.pricing-cta p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.pricing-cta button {
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.pricing-cta button:hover {
+  background-color: #0d74d1;
+}
+
+/* Footer Full Width Fix */
+footer {
+  width: 100%;
+}
+
+/* Force full width */
+.pricing-wrapper {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #f9fafb;
+}

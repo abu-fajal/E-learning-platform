@@ -1,0 +1,92 @@
+.instructor-profile-wrapper {
+   width: 100vw;
+  min-height: 100vh;
+  background-color: #f9fafb;
+  margin-top: 600px;
+
+.instructor-profile {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.not-found {
+  padding-top: 120px;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #c00;
+}
+
+.instructor-profile {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  font-family: sans-serif;
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.view-profile-btn {
+  background-color: #000;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.course-chip {
+  display: inline-block;
+  background: #f5f5f5;
+  padding: 10px 16px;
+  margin: 8px;
+  border-radius: 8px;
+  font-weight: 600;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.stats-box {
+  background: #fafafa;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+}

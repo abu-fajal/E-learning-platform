@@ -1,0 +1,72 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: lab(77.44% -14.49 -22.39);
+  z-index: 9999;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  color: black;
+}
+
+.nav-link {
+  text-decoration: none;
+  color:black;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #4f46e5;
+}
+
+.nav-actions {
+  padding-top: 15px;
+  display: flex;
+  gap: 1rem;
+}
+
+.search-input {
+ padding-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 0px;
+}
+
+.login, .signup {
+  padding: 8px 8px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  width: 200px;
+  height: 50px;
+  margin-top: 5px;
+}
+
+.login {
+  background-color: #4f46e5;
+  color: white;
+}
+
+.signup {
+  background-color: #4f46e5;
+  color: white;
+}

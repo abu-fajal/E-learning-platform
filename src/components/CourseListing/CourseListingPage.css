@@ -1,0 +1,129 @@
+/* Force full width */
+.course-wrapper {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #f9fafb;
+}
+
+/* Content layout */
+.course-listing {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  font-family: 'Lexend', sans-serif;
+}
+
+/* Header section */
+.course-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.course-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.course-header p {
+  font-size: 1rem;
+  color: #6b7280;
+}
+
+.course-search {
+  width: 100%;
+  max-width: 600px;
+  margin: 1.5rem auto;
+  display: block;
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #f1f5f9;
+}
+
+/* Filters */
+.course-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.course-filters select {
+  padding: 10px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background-color: #fff;
+  font-size: 0.95rem;
+}
+
+/* Tabs */
+.course-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.course-tabs button {
+  background: none;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #6b7280;
+  cursor: pointer;
+  padding-bottom: 6px;
+  border-bottom: 2px solid transparent;
+}
+
+.course-tabs button.active-tab {
+  color: #111827;
+  border-bottom: 2px solid #4f46e5;
+}
+
+/* Grid layout — increase column size */
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* was 260px */
+  gap: 2.5rem; /* increased gap for cleaner spacing */
+  padding: 1rem;
+}
+
+/* Card styling — bigger size, cleaner look */
+.course-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 75%;
+  width: 300px;
+  padding-top: 0px;
+  
+}
+
+.course-card:hover {
+  transform: translateY(-6px);
+}
+
+.course-card img {
+  width: 270px;
+  height: 200px; /* increased from 160px */
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+.course-card h3 {
+  font-size: 1.1rem;
+  margin: 16px;
+}
+
+.course-card p {
+  font-size: 0.95rem;
+  margin: 0 16px 20px;
+  color: #6b7280;
+}

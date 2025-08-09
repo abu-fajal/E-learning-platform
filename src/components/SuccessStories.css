@@ -1,0 +1,44 @@
+/* components/SuccessStories.css */
+.reviews {
+  padding: 40px 50px;
+}
+
+
+.review-card {
+  background: lab(49.59% 84.12 -56);
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+  color: #eee;
+
+  
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.review-header img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+.review-header h4 {
+  margin: 0;
+}
+.review-header span {
+  font-size: 14px;
+  color: #6b7280;
+}
+.stars {
+  color: #facc15;
+  margin: 10px 0;
+}
+.review-footer {
+  margin-top: 10px;
+  display: flex;
+  gap: 20px;
+  color: #6b7280;
+}

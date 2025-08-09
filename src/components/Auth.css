@@ -1,0 +1,166 @@
+/* WRAPPER: full-screen centered background */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background: linear-gradient(120deg, #f6f8fc, );
+  animation: backgroundShift 10s infinite ease alternate;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 1500px;
+  height: 110vh;
+}
+
+/* BACKGROUND SHIFT ANIMATION */
+@keyframes backgroundShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* AUTH CONTAINER CARD */
+.auth-container {
+  width: 100%;
+  max-width: 420px;
+  padding: 40px 30px;
+  background: linear-gradient(145deg, #ffffff, #f2f2f2);
+  border-radius: 15px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 0.6s ease;
+}
+
+/* FADE-IN ANIMATION */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* HEADINGS */
+.auth-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #4e54c8;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* FORM */
+.auth-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-container label {
+  margin-top: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* INPUT FIELDS */
+.auth-container input {
+  padding: 12px 14px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-size: 15px;
+}
+
+.auth-container input:focus {
+  border-color: #4e54c8;
+  box-shadow: 0 0 5px rgba(78, 84, 200, 0.4);
+  outline: none;
+}
+
+/* PRIMARY BUTTON */
+.btn-primary {
+  margin-top: 20px;
+  background: #4e54c8;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: #363bbf;
+  transform: translateY(-2px);
+}
+
+/* SECONDARY BUTTON */
+.btn-secondary {
+  margin-top: 10px;
+  background: #f1f1f1;
+  color: #333;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background: #e2e2e2;
+  transform: translateY(-2px);
+}
+
+/* ERROR MESSAGE */
+.error-msg {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* TEXT / LINK */
+.auth-container p {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #444;
+}
+
+.auth-container p a {
+  color: #4e54c8;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.auth-container p a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .auth-container {
+    padding: 30px 20px;
+    border-radius: 10px;
+  }
+
+  .auth-container h2 {
+    font-size: 20px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  input {
+    font-size: 14px;
+  }
+}
